@@ -2,11 +2,11 @@ import os
 import imageai
 from imageai.Detection.Custom import DetectionModelTrainer
 
+#Choose path where data and model is stored 
+DATA_DIR = r"C:\Users\judit\Downloads\drive-download-20191024T074253Z-001\planetproof"
+PRETRAINED_MODEL =  r"C:\Users\judit\Downloads\drive-download-20191024T074253Z-001\planetproof\models\detection_model-ex-020--loss-0006.402.h5"
 
-DATA_DIR = "../planetproof"
-PRETRAINED_MODEL =  "../planetproof/models/detection_model-ex-002--loss-0009.663.h5"
-
-def keurmerk_train(, model):
+def keurmerk_train(data, model):
     """Trains keurmerk detection based on a pretrained network
 
     Keyword Arguments:
