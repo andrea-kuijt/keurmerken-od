@@ -4,6 +4,8 @@ Object Detection of sustainability labels on food
 In order to train your model and predict labels, your file structure should look like this:
 
 0. folder
+
+
     0.1   models
       	0.1.1 detection_model.h5
 
