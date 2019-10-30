@@ -6,12 +6,19 @@ folder
 
 
 ├── models
+
 ---- detection_model.h5
 
+
 ├── train
+
 ----annotations
+
 ----images
 
+
 └── validation
+
 ----annotations
+
 ----images
