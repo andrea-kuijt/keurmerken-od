@@ -1,9 +1,10 @@
 import os
+from pathlib import Path
 from imageai.Detection.Custom import CustomObjectDetection
 
+# Your data and model directories here
 MODEL_PATH = "../models/planetproof_027_3288.h5"
 JSON_PATH = "../models/detection_config_027.json"
-
 IMAGE_DIR = "../data/test_images/"
 RESULTS_DIR = "../data/test_results/"
 

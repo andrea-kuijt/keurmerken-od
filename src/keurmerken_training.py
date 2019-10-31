@@ -1,8 +1,10 @@
+from pathlib import Path
 from imageai.Detection.Custom import DetectionModelTrainer
 
-# Choose path where data and model is stored
+# Your data and model directories here
 DATA_DIR = "../data/"
 MODEL_PATH = "../models/planetproof_027_3288.h5"
+
 
 def keurmerk_train(data, model):
     """Trains YOLOv3 model from pretrained model.
