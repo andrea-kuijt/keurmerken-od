@@ -13,8 +13,8 @@ from imageai.Detection.Custom import CustomObjectDetection
 MODEL_PATH = "../models/planetproof_027_3288.h5"
 JSON_PATH = "../models/detection_config_027.json"
 
-IMAGE_DIR = "../data/images/"
-RESULTS_DIR = "../data/results/"
+IMAGE_DIR = "../data/test_images/"
+RESULTS_DIR = "../data/test_results/"
 
 
 def keurmerk_predict(print_results=False, min_prob=30):
