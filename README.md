@@ -43,16 +43,18 @@ In order to train your model, transfer learning will be used from the pretrained
 As a last step you should change the following in the code:
 
 In keurmerken_training.py:
-DATA_DIR =  path to your data folder containing train and validation set
-MODEL_PATH =  path to your pretrained model (i.e. yolov3.h5) stored in .h5 format
-labels = list with the labels of your annotations
+- DATA_DIR =  path to your data folder containing train and validation set
+- MODEL_PATH =  path to your pretrained model (i.e. yolov3.h5) stored in .h5 format
+- labels = list with the labels of your annotations
 
 
 In keurmerken_predicting.py:
-MODEL_PATH =  path to your model after training
-JSON_PATH = path to the .json file created while training
-IMAGE_DIR =  directory where the images you want to predict the label on are stored
-RESULTS_DIR =  directory where the images after they are annotated and labelled should be stored
+
+- MODEL_PATH =  path to your model after training
+- JSON_PATH = path to the .json file created while training
+- IMAGE_DIR =  directory where the images you want to predict the label on are stored
+- RESULTS_DIR =  directory where the images after they are annotated and labelled should be stored
+
 While training the model will automatically create new folders in your data map (cache, json, logs, models). The models folder contains the models made while training. 
 
 If you want to change something, for instance the labels, you should delete the cache, logs and the json folder in order to retrain your model. 
