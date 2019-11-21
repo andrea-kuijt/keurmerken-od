@@ -50,8 +50,8 @@ In keurmerken_training.py:
 
 In keurmerken_predicting.py:
 
-- MODEL_PATH =  path to your model after training
-- JSON_PATH = path to the .json file created while training
+- MODEL_PATH =  path to your model after training (automatically stored in the map models)
+- JSON_PATH = path to the .json file created while training (automatically stored in the map json)
 - IMAGE_DIR =  directory where the images you want to predict the label on are stored
 - RESULTS_DIR =  directory where the images after they are annotated and labelled should be stored
 
