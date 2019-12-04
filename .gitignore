@@ -1,6 +1,7 @@
 # Data folder ignore
 /data
 /models
+/json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
