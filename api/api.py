@@ -1,12 +1,13 @@
 import io
 import cv2
+import sys
 from PIL import Image
 import numpy as np
 from flask import Flask, request, jsonify
 from imageai.Detection.Custom import CustomObjectDetection
 
-MODEL_PATH = "../models/planetproof_027_3288.h5"
-JSON_PATH = "../models/detection_config_027.json"
+MODEL_PATH = "../models/" + sys.argv[1]
+JSON_PATH = "../json/" + sys.argv[2]
 
 app = Flask(__name__)
 
