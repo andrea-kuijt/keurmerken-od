@@ -1,9 +1,8 @@
-from pathlib import Path
 from imageai.Detection.Custom import DetectionModelTrainer
 
 # Your data and model directories here
 DATA_DIR = "../data/"
-MODEL_PATH = "../models/planetproof_027_3288.h5"
+MODEL_PATH = "../models/detection_model-ex-015--loss-0004.540.h5"
 
 
 def keurmerk_train(data, model):
@@ -20,16 +19,31 @@ def keurmerk_train(data, model):
     trainer = DetectionModelTrainer()
     trainer.setModelTypeAsYOLOv3()
 
-    labels = ["planetproof"]
+    labels = [
+        "fairtrade",
+        "planetproof",
+        "utz",
+        "organic",
+        "vegan",
+        "weidemelk",
+        "bio",
+        "eko",
+        "asc",
+        "msc",
+        "ebio",
+        "beterleven",
+    ]
 
     # Data folder
     trainer.setDataDirectory(data_directory=DATA_DIR)
 
     # Training configuration
-    trainer.setTrainConfig(object_names_array=labels,
-                           batch_size=4,
-                           num_experiments=100,
-                           train_from_pretrained_model=MODEL_PATH)
+    trainer.setTrainConfig(
+        object_names_array=labels,
+        batch_size=4,
+        num_experiments=100,
+        train_from_pretrained_model=MODEL_PATH,
+    )
 
     trainer.trainModel()
 
