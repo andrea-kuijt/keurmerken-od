@@ -28,12 +28,12 @@ To train and validate your model a training and validation set is needed, both c
 ```
 ## 2. Installing 
 
-Using conda
+Conda users install dependencies using the yml file included.
 ```bash
-$ conda install --file requirements.txt
+$ conda env create -f environment.yml
 ```
 
-Using pip
+Otherwise, using pip.
 ```bash
 $ pip install -r requirements.txt
 ```
